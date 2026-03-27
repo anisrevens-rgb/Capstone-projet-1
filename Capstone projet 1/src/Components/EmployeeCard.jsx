@@ -1,11 +1,12 @@
 import "./EmployeeCard.css"
-export default function EmployeeCard( employee ){
+
+export default function EmployeeCard( employes ){
     return (
 <div className="employee-card">
-<h3>name</h3>
-<p><strong>Poste :</strong></p>
-<p><strong>departement :</strong></p>
-<p><strong>status :</strong></p>
+<p><strong>name :</strong> {employes.name}   </p>
+<p><strong>Poste :</strong> {employes.poste }  </p>
+<p><strong>departement :</strong> {employes.department}  </p>
+<p><strong>status :</strong> {employes.status}  </p>
 
 
 </div>
