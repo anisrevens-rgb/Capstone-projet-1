@@ -1,27 +1,27 @@
 
-export const employees = [
+export const employes = [
 { 
   id: 1,
-  name: "juliano", 
-  poste: "manager", 
-  department: "L'ouest",
+  name: "Juliano", 
+  poste: "Manager", 
+  departement: "Ouest",
   status: "Actif" 
 },
       
  { 
     id: 2,
     name: "Anis", 
-    poste: "direktè ", 
-    department: "Sud",
+    poste: "Directeur ", 
+    departement: "Sud",
     status: "Actif" 
   },
 
 
   { 
     id: 3,
-    name: "jean pierre", 
-    poste: "jeran lakou a ", 
-    department: "Nord",
+    name: "Jean pierre", 
+    poste: "Designer ", 
+    departement: "Nord",
     status: "Actif" 
   },
 

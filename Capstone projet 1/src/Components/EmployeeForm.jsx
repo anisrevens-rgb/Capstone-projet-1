@@ -1,34 +1,59 @@
+import { useState } from "react"
 import "./EmployeeForm.css"
-export default function EmployeeForm(){
+export default function EmployeeForm({addEmployee}){
+    const [name,setName]= useState("");
+     const [poste,setPoste]= useState("");
+      const [departement,setDepartement]= useState("");
+      const handleSubmit=(e)=>{
+        e.preventDefault();
+        if (!name||!poste|| !departement) return;
+        const newEmployee={
+            id: Date.now(),
+            name,
+            poste,
+            departement,
+            status :"Actif",
+        };
+        addEmployee(newEmployee);
+        setName("")
+        setPoste("")
+        setDepartement("")
+      }
 return(
-    <form className="form-container">
+    <form className="form-container"
+    onSubmit={handleSubmit}>
+       <h2>Ajouter un employe</h2>
         <div className="form-card">
-            <label htmlFor="name">Nom </label>
+            <label htmlFor="name">Nom: </label>
             <input
-            id="name"
-            type="text"
-            placeholder="Entrer le nom"
+          value={name} onChange={(e)=>
+            setName(e.target.value)
+          }
             />
             
         </div>
             <div className="form-card">
-            <label htmlFor="position">Position </label>
+            <label htmlFor="poste">Poste: </label>
             <input
-            id="position"
-            type="text"
-            placeholder="Entrer la position"
+          value={poste} onChange={(e)=>
+            setPoste(e.target.value)}
+
+            
             />
             
         </div>
             <div className="form-card">
-            <label htmlFor="departement">Departement</label>
+            <label htmlFor="departement">Departement :</label>
             <input
-            id="name"
-            type="text"
-            placeholder="Entrer le departement"
+           value={departement} onChange={(e)=>
+            setDepartement(e.target.value)}
             />
             
         </div>
+        
+            
+        
+        
         <button type="submit" className="form-button">Ajouter l'employe</button>
 
     </form>
