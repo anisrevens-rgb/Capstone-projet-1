@@ -1,0 +1,38 @@
+.dashboard {
+    background: #353535;
+    min-height: 100vh;
+    padding: 2rem 4%;
+    color: #e5e5e5;
+
+  }
+  
+  .dashboard h1 {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    border-left: 4px solid #e50914;
+    padding-left: 1rem;
+    letter-spacing: -0.5px;
+  }
+  
+  /* Employee list container – assumes EmployeeList renders a grid */
+  .employee-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .dashboard {
+      padding: 1rem 5%;
+    }
+    .dashboard h1 {
+      font-size: 1.8rem;
+    }
+    .employee-list {
+      gap: 1rem;
+    }
+  }

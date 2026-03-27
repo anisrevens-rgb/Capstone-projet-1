@@ -22,7 +22,7 @@ export default function EmployeeForm({addEmployee}){
 return(
     <form className="form-container"
     onSubmit={handleSubmit}>
-       <h2>Ajouter un employe</h2>
+       <h2>Ajouter un employer</h2>
         <div className="form-card">
             <label htmlFor="name">Nom: </label>
             <input
