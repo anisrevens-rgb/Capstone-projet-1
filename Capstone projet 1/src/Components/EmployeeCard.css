@@ -38,7 +38,7 @@
     margin-bottom: 0;
   }
   
-  /* Responsive */
+  
   @media (max-width: 768px) {
     .employee-card {
       width: 100%;

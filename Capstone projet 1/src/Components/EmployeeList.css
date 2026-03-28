@@ -16,7 +16,7 @@
     letter-spacing: -0.5px;
   }
   
-  /* Employee list container – assumes EmployeeList renders a grid */
+  
   .employee-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -24,7 +24,7 @@
     margin-top: 2rem;
   }
   
-  /* Responsive adjustments */
+  
   @media (max-width: 768px) {
     .dashboard {
       padding: 1rem 5%;

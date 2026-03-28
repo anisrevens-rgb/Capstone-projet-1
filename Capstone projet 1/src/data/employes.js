@@ -24,6 +24,20 @@ export const employes = [
     departement: "Nord",
     status: "Actif" 
   },
+    { 
+    id: 4,
+    name: "Marco Zuma", 
+    poste: "Sécurité ", 
+    departement: "Sud",
+    status: "Inactif" 
+  },
+    { 
+    id: 5,
+    name: "Melissa Pierre", 
+    poste: "Secrétaire ", 
+    departement: "Centre",
+    status: "Inactif" 
+  },
 
 
 

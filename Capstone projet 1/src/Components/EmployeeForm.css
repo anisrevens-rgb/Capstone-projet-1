@@ -23,7 +23,7 @@
   }
   
   .form-card label {
-    color: #06a5f4;
+    color:white;
     margin-bottom: 0.5rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -70,7 +70,7 @@
     transform: translateY(0);
   }
   
-  /* Responsive */
+  
   @media (max-width: 600px) {
     .form-container {
       margin: 1rem;

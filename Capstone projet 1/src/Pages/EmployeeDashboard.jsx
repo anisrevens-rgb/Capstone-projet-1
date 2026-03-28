@@ -12,7 +12,7 @@ export default function EmployeeDashboard()
  return (
    <>
    <div className="dashboard">
-    <h1>Gestion des employes</h1>
+    <h1>Gestion des employés</h1>
     <EmployeeForm addEmployee={addEmployee}/>
      <EmployeeList employes={employees}/>
    </div>
