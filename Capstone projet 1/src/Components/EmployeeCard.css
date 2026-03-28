@@ -1,0 +1,48 @@
+.employee-card {
+    background: #1f1f1f;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(103, 132, 250, 0.3);
+    color: #e5e5e5;
+    border-left: 4px solid #06a5f4;
+  }
+  
+  .employee-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(229, 9, 20, 0.2);
+  }
+  
+  .employee-card p {
+    margin: 0.75rem 0;
+    line-height: 1.4;
+    font-size: 0.95rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(8, 55, 244, 0.1);
+    padding-bottom: 0.5rem;
+  }
+  
+  .employee-card p strong {
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.85rem;
+  }
+  
+  .employee-card p:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .employee-card {
+      width: 100%;
+      margin: 0.75rem 0;
+      padding: 1rem;
+    }
+  }
